@@ -6,14 +6,16 @@
     <title>Custom Cabinets</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f5efe6;
+            text-align: center;
         }
 
         header {
-            background-color: #333;
+            background-color: #6b4f4f;
             color: white;
             padding: 20px;
             text-align: center;
@@ -22,48 +24,33 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
-            padding: 10px 0;
+            background-color: #8b5a2b;
+            padding: 15px 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
+            font-size: 18px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        .hero {
-            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-            height: 400px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-        }
-
         .section {
             padding: 40px;
-            text-align: center;
+            background-color: #e6d5c3;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 80%;
         }
 
         .section h2 {
             margin-bottom: 20px;
+            color: #5a3d2b;
         }
 
         .grid {
@@ -74,16 +61,16 @@
         }
 
         .grid div {
-            background-color: #f4f4f4;
+            background-color: #e1c6a0;
             padding: 20px;
-            border: 1px solid #ddd;
+            border: 2px solid #8b5a2b;
             border-radius: 8px;
             width: 300px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         footer {
-            background-color: #333;
+            background-color: #6b4f4f;
             color: white;
             text-align: center;
             padding: 20px;
@@ -93,8 +80,14 @@
 </head>
 <body>
     <header>
-        <h1>Custom Cabinets</h1>
-        <p>"The art of design, the science of building"</p>
+        <h1 style="animation: fadeIn 2s ease-in-out forwards; opacity: 0;">Hi, Welcome!</h1>
+        <p style="animation: fadeIn 3s ease-in-out forwards; opacity: 0;">We are an expanding company in Las Vegas, dedicated to crafting high-quality custom cabinetry using AI, CNC machines, and 3D design. Precision, quality, and customer satisfaction are our priorities.</p>
+        <style>
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        </style>
     </header>
 
     <nav>
@@ -104,28 +97,15 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="hero">
-        <h1>Transform Your Space</h1>
-        <p>Custom cabinets designed to fit your style and budget</p>
-    </div>
-
-    <section class="section" id="about">
-        <h2>About Us</h2>
-        <p>We are an expanding company born in Las Vegas, dedicated to providing high-quality custom cabinetry. 
-           Utilizing cutting-edge technology such as AI, CNC machines, and 3D design, we craft cabinets with precision and efficiency. 
-           We pride ourselves on using only top-quality materials, ensuring durability and elegance. 
-           Our team is known for punctuality and delivering excellent customer service, making your experience smooth and satisfying.</p>
-    </section>
-
     <section class="section" id="services">
-        <h2>Our Services</h2>
+        <h2>Services</h2>
         <div class="grid">
             <div>
                 <h3>Free Estimate</h3>
                 <p>We provide a no-obligation quote for your custom cabinets. Our experts will assess your space, listen to your requirements, and provide you with a detailed estimate for your project.</p>
             </div>
             <div>
-                <h3>Design</h3>
+                <h3>3D Design</h3>
                 <p>Our experienced designers work closely with you to create custom cabinet solutions tailored to your space and personal style. We offer a range of materials, colors, and finishes to match your vision.</p>
             </div>
             <div>
@@ -139,14 +119,25 @@
         </div>
     </section>
 
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are an expanding company born in Las Vegas, dedicated to providing high-quality custom cabinetry. 
+           Utilizing cutting-edge technology such as AI, CNC machines, and 3D design, we craft cabinets with precision and efficiency. 
+           We pride ourselves on using only top-quality materials, ensuring durability and elegance. 
+           Our team is known for punctuality and delivering excellent customer service, making your experience smooth and satisfying. 
+           We are passionate about detail, cleanliness, and ensuring customer satisfaction. Our priority is to exceed expectations and leave every client delighted with our work.</p>
+    </section>
+    </section>
+
     <section class="section" id="gallery">
         <h2>Gallery</h2>
         <p>Check out our custom kitchen cabinet styles:</p>
         <div class="grid">
-            <div><img src="https://www.oppoliahome.com/wp-content/uploads/2023/06/modern-matte-black-kitchen-cabinets-obk22-dark-1024.webp" alt="Modern Kitchen Cabinet" style="width:100%; border-radius: 8px;"></div>
-            <div><img src="https://example.com/kitchen-cabinet2.jpg" alt="Classic Wooden Cabinet" style="width:100%; border-radius: 8px;"></div>
-            <div><img src="https://example.com/kitchen-cabinet3.jpg" alt="Minimalist White Cabinet" style="width:100%; border-radius: 8px;"></div>
-            <div><img src="https://example.com/kitchen-cabinet4.jpg" alt="Rustic Kitchen Cabinet" style="width:100%; border-radius: 8px;"></div>
+            <div><img src="https://www.oppoliahome.com/wp-content/uploads/2023/06/modern-matte-black-kitchen-cabinets-obk22-dark-1024.webp" alt="Modern Matte Black Kitchen Cabinet" style="width:100%; border-radius: 8px;"></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEmcLbcUrVE78m85WFosHI6pU_MtfvX9V2fw&s" alt="Classic Wooden Cabinet" style="width:100%; border-radius: 8px;"></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsCZcJ6wNGV4gtcihd9-t4fu_I1HUW24lXA&s" alt="Minimalist White Cabinet" style="width:100%; border-radius: 8px;"></div>
+            <div><img src="https://decorcabinets.com/wp-content/uploads/2024/02/rustic-kitchen-cabinets-16-1024x663.jpg" alt="Rustic Kitchen Cabinet" style="width:100%; border-radius: 8px;"></div>
+            <div><img src="https://image.made-in-china.com/318f0j00tTmGqAWhaPbQ/35-mp4.webp" alt="Additional Kitchen Cabinet" style="width:100%; border-radius: 8px;"></div>
         </div>
     </section>
 
